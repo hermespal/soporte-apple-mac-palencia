@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Soporte Apple Mac</title>
+    <!-- CSS personalized -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado - Header -->
+    <header>
+        <img src="img/logo-w.png" alt="Logo Soporte Apple Mac" class="brand">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="equipos-soportados.html">Equipos soportados</a></li>
+                <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button><a href="contacto.html">Soporte</a></button>
+    </header>
+    <br>
+    <main>
+        <!-- Contacto -->
+        <section>
+            <div>
+                <h2>Contacto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nihil?</p>
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <form action="#">
+                        <label for="tipoDeEquipo">Tipo de Equipo</label><br>
+                        <input type="radio" id="macbook" name="tipoDeEquipo" value="macbook">
+                        <label for="macbook">Macbook</label><br>
+                        <input type="radio" id="iMac" name="tipoDeEquipo" value="iMac">
+                        <label for="iMac">iMac</label><br>
+                        <input type="radio" id="Varios" name="tipoDeEquipo" value="Varios">
+                        <label for="Varios">Otro</label>
+                        <br><br>
+        
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre"><br><br>
+                        
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Apellido">
+                        <br><br>
+
+                        <label for="ubicacion">Ubicacion</label>
+                        <select name="ubicacion" id="ubicacion">
+                            <option value="Santiago">Santiago</option>
+                            <option value="Regiones">Regiones</option>
+                        </select><br><br>
+
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea name="mensaje" id="mensaje" rows="3" placeholder="Describe la falla"></textarea>
+                        <br><br>
+                        
+                        <input type="submit" value="Enviar">
+                    </form>
+                </fieldset>
+
+
+            </div>
+        </section>
+
+    </main>
+    <br>
+    <hr>
+    <!-- Pie de pagina - Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="img/logo-b.png" alt="Logo Soporte Apple Mac" class="brand">
+            <address>
+                <ul>
+                    <li><a href="#"> +56 99999999</a></li>
+                    <li><a href="#"> contacto@soporteapplemac.com</a></li>
+                    <li>Santiago, Chile</li>
+                </ul>
+            </address>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© 2021, Soporte Apple Mac</p>
+            <button><a href="#">Subir</a></button>
+        </div>
+      </footer>
+</body>
+</html>
