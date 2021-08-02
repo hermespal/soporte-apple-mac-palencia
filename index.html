@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,53 +11,53 @@
 
 <body>
     <!-- Encabezado - Header -->
-    <header>
-        <img src="img/brand/logo-soporte-apple-mac.svg" width="64px" alt="Logo Soporte Apple Mac" class="brand">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="equipos-soportados.html">Equipos soportados</a></li>
-                <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="hp-header">
+        <nav class="navBar">
+            <a><img src="img/brand/logo-soporte-apple-mac.svg" alt="Logo Soporte Apple Mac"></a>
+                <ul class="navBar__link">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="equipos-soportados.html">Equipos soportados</a></li>
+                    <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="active"><a href="contacto.html">Soporte</a></li>
+                </ul>
         </nav>
-        <button><a href="contacto.html">Soporte</a></button>
     </header>
 
     <main>
          <!-- Seccion Hero -->
-         <section class="img-hero">
+         <section class="hp-container-fluid hp-p hp-row img-hero">
             <div>
                 <h1>Soporte Técnico Apple</h1>
                 <p>Si necesitas reparar o mejorar tu equipo, nosotros somos tu mejor elección.</p>
-                <button><a href="contacto.html">Soporte</a></button>
+                <button class="hp-btn hp-btn-primary"><a href="contacto.html">Soporte</a></button>
             </div>
          </section>
 
          <!-- Nosotros -->
          <section>
-             <div class="container__50">
-                 <div>
+             <div class="hp-container-fluid hp-row hp-p nosotros">
+                 <div class="hp-col">
                     <h2>Somos el servicio técnico especializado en Apple</h2>
                     <p>Somos expertos de la tecnología y fanáticos al igual que tú. Nos dedicamos a reparar y mantener tus equipos Apple para que funcionen como el primer día. Puedes solicitar tu soporte a domicilio o de manera remota sin salir de casa.</p>
-                    <a href="nosotros.html">Leer más</a>
-                    <h4>Nuestra experiencia</h4>
+                    <a class="hp-link" href="nosotros.html">Leer más</a><br><br>
+                    <h4>Nuestra experiencia</h4><br>
                     <p class="transition__years">10 años</p>
                  </div>
-                 <div class="pl">
-                    <img src="img/macbook-pro-nosotros.png" alt="Nosotros" class="img-fluid img-transform">
+                 <div class="hp-col">
+                    <img src="img/macbook-pro-nosotros.png" alt="Nosotros" class="hp-img-fluid img-transform">
                 </div>
              </div>
          </section>
 
          <!-- Equipos Soportados -->
          <section>
-             <div class="container background-business">
-                 <div>
-                     <H3>Equipos soportados</H3>
+             <div class="hp-container-fluid hp-bg-primary hp-p hp-text-align hp-text-white">
+                 <div class="hp-textAlign-center">
+                     <h3>Equipos soportados</h3>
                      <p>Nuestro soporte abarca los siguientes equipos:</p>
-                     <div class="grid__equipos">
+                     <div class="hp-grid hp-grid__equipos">
                          <div>
                              <img src="img/macbook-pro.svg" alt="macbook" width="64px">
                              <p>Macbook</p>
@@ -84,7 +84,7 @@
                         </div>
 
                      </div>
-                     <button><a href="equipos-soportados.html">Leer más</a></button>
+                     <button class="hp-btn hp-btn-primary"><a href="equipos-soportados.html">Leer más</a></button>
                  </div>
              </div>
          </section>
@@ -93,16 +93,16 @@
 
         <!-- Fallas Comunes -->
         <section>
-        <div class="container__50">
-            <div>
+        <div class="hp-container-fluid hp-row hp-p hp-align-center">
+            <div class="hp-col">
                 <h3>Fallas Comunes</h3>
                 <p>Ofrecemos las mejores soluciónes para tus equipos Apple, siempre y cuando tenga las fallas que nosotros atendendemos, para ello puedes leer nuestra seccion de equipos soportados, donde documentamos las fallas. <br><br>
                 <b>Importante:</b> Las fallas que requieran repuestos, estos mismos se traen bajo pedido y el cliente debe abonar el 50% minimo del valor del respuesto.
                 </p>
-                <a href="fallas-comunes.html">Leer más</a><br><br>
+                <a class="hp-link" href="fallas-comunes.html">Leer más</a><br><br>
             </div>
-            <div class="pl">
-                <img src="img/fallas-comunes.jpeg" alt="Fallas Comunes">
+            <div class="hp-col hp-px-20">
+                <img src="img/fallas-comunes.jpeg" alt="Fallas Comunes" class="hp-img-fluid">
             </div>
         </div>
     </section>
@@ -110,9 +110,12 @@
     </main>
 
     <!-- Pie de pagina - Footer -->
-    <footer>
-        <div class="footer-content">
-            <img src="img/logo-b.png" alt="Logo Soporte Apple Mac" class="brand">
+    <footer class="hp-container-fluid hp-p hp-row hp-footer hp-bg-gray">
+        <div class="hp-col">
+            <a><img src="img/brand/logo-soporte-apple-mac-b.svg" alt="Logo Soporte Apple Mac"></a>
+            <p>© 2021, Soporte Apple Mac</p>
+        </div>
+        <div class="hp-col">
             <address>
                 <ul>
                     <li><a href="#"> +56 99999999</a></li>
@@ -120,12 +123,8 @@
                     <li>Santiago, Chile</li>
                 </ul>
             </address>
+            <a class="hp-link" href="#">Subir</a>
         </div>
-        <hr>
-        <div class="copyright">
-            <p>© 2021, Soporte Apple Mac</p>
-            <button><a href="#">Subir</a></button>
-        </div>
-      </footer>
+    </footer>
 </body>
 </html>

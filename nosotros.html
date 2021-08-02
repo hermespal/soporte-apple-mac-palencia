@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,36 +10,37 @@
 </head>
 <body>
     <!-- Encabezado - Header -->
-    <header>
-        <img src="img/logo-w.png" alt="Logo Soporte Apple Mac" class="brand">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="equipos-soportados.html">Equipos soportados</a></li>
-                <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="hp-header">
+        <nav class="navBar">
+            <a><img src="img/brand/logo-soporte-apple-mac.svg" alt="Logo Soporte Apple Mac"></a>
+                <ul class="navBar__link">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="equipos-soportados.html">Equipos soportados</a></li>
+                    <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="active"><a href="contacto.html">Soporte</a></li>
+                </ul>
         </nav>
-        <button><a href="contacto.html">Soporte</a></button>
     </header>
-    <br>
     <main>
         <!-- Nosotros -->
-        <section>
-            <div>
+        <section class="hp-container-fluid hp-p hp-row">
+            <div class="hp-col">
                 <h5>Acerca de</h5>
                 <h2>Nosotros</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, tempora commodi atque itaque odit dolorum aut animi saepe natus aperiam? Quidem repellendus ipsam rerum sapiente similique, animi delectus est ducimus aliquam beatae qui non illum placeat vitae molestiae voluptas. Voluptate, quia adipisci dicta exercitationem quisquam sunt sed dolorem vero mollitia accusamus eius nobis. Dolorem tenetur, quos incidunt beatae enim possimus harum repellendus aperiam magni eveniet nostrum quas sit nisi vitae voluptatem animi sunt corrupti illum dolor suscipit, earum, optio nemo exercitationem! Excepturi quia fuga explicabo eum delectus doloremque, deserunt quo. Placeat ratione, accusamus id dolorum porro dolor eos expedita non facilis doloremque deleniti sit facere, fugiat asperiores, repudiandae molestias officiis nobis autem quis? Cupiditate, cumque. Exercitationem laborum eveniet nemo accusamus quidem quos est ex aliquam ea hic in porro saepe omnis quia, quae beatae asperiores placeat adipisci! Deleniti dolorem nihil aperiam dignissimos recusandae iste, provident eveniet enim repellendus commodi!</p>
-                <img src="img/placeholder1-1.png" alt="Imagen nosotros">
+            </div>
+            <div class="hp-col hp-px-20">
+                <img class="hp-img-fluid" src="img/placeholder1-1.png" alt="Imagen nosotros">
             </div>
         </section>
 
         <!-- Beneficios Tabla -->
-        <section>
+        <section class="hp-container-fluid hp-p">
             <div>
-                <h2>Ventajas</h2>
-                <table>
+                <h2>Ventajas</h2><br>
+                <table class="hp-table">
                     <tr>
                         <th>Servicio</th>
                         <th>Ventajas</th>
@@ -62,12 +63,14 @@
             </div>
         </section>
     </main>
-    <br>
-    <hr>
+
     <!-- Pie de pagina - Footer -->
-    <footer>
-        <div class="footer-content">
-            <img src="img/logo-b.png" alt="Logo Soporte Apple Mac" class="brand">
+    <footer class="hp-container-fluid hp-p hp-row hp-footer hp-bg-gray">
+        <div class="hp-col">
+            <a><img src="img/brand/logo-soporte-apple-mac-b.svg" alt="Logo Soporte Apple Mac"></a>
+            <p>© 2021, Soporte Apple Mac</p>
+        </div>
+        <div class="hp-col">
             <address>
                 <ul>
                     <li><a href="#"> +56 99999999</a></li>
@@ -75,12 +78,8 @@
                     <li>Santiago, Chile</li>
                 </ul>
             </address>
+            <a class="hp-link" href="#">Subir</a>
         </div>
-        <hr>
-        <div class="copyright">
-            <p>© 2021, Soporte Apple Mac</p>
-            <button><a href="#">Subir</a></button>
-        </div>
-      </footer>
+    </footer>
 </body>
 </html>

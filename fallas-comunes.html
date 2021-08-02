@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +10,49 @@
 </head>
 <body>
     <!-- Encabezado - Header -->
-    <header>
-        <img src="img/logo-w.png" alt="Logo Soporte Apple Mac" class="brand">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="equipos-soportados.html">Equipos soportados</a></li>
-                <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="hp-header">
+        <nav class="navBar">
+            <a><img src="img/brand/logo-soporte-apple-mac.svg" alt="Logo Soporte Apple Mac"></a>
+                <ul class="navBar__link">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="equipos-soportados.html">Equipos soportados</a></li>
+                    <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="active"><a href="contacto.html">Soporte</a></li>
+                </ul>
         </nav>
-        <button><a href="contacto.html">Soporte</a></button>
     </header>
-    <br>
     <main>
         <!-- Fallas Comunes -->
-        <section>
+        <section class="hp-container-fluid hp-p">
             <div>
-                <h2>Fallas Comunes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, tempora commodi atque itaque odit dolorum aut animi saepe natus aperiam? Quidem repellendus ipsam rerum sapiente similique, animi delectus est ducimus aliquam beatae qui non illum placeat vitae molestiae voluptas.</p>
+                <h2>Fallas Comunes</h2><br>
+                <h3>Te ofrece la mejor solución para tu equipo Macbook si se encuentra en alguna de las siguientes situaciones:</h3><br>
+
+            <div class="hp-bg-fallas">
+                <h4>Macbook no enciende</h4>
+                <p>Si tu Macbook no enciende, es probable que alguno de los componentes internos esté fallando. Un Macbook que no enciende puede estar afectado por una batería en mal estado o por una fuente de alimentación dañada. Igualmente, si se reinicia puede ser un problema de batería o incluso del propio sistema operativo. Si ha dejado de funcionar de forma aleatoria puede ser que el arranque de disco duro esté dañado o que el sistema no logre arrancar por culpa de algún componente en mal estado. Soluciones: Soporte técnico a domicilio o traer el equipo al taller para revisión.</p>
+                <h4>MacBook Bloqueado</h4>
+                <p>Unos de los fallos más comunes son que se quede colgado o bloqueado, o que al encenderlo aparezca una pantalla con una manzana o un carpeta con interrogación que nunca termina de cargar. Estas situaciones, la mayor parte de las veces, son problemas del motor de arranque del disco duro o del propio componente en sí. Los fallos del sistema operativo, sobre todo a la hora de actualizar, también causan este tipo de bloqueos. Soluciones: Soporte técnico a domicilio o traer el equipo al taller para revisión.</p>
+                <h4>Pantalla Rota o se ve mal la imagen</h4>
+                <p>Si todo funciona correctamente pero el cristal o LCD está rayado, tiene un corte o un golpe, se puede solucionar con un cambio de cristal o pantalla. Si los problemas de pantalla que aparecen en tu Macbook tienen que ver con la calidad de imagen, del color, o de las líneas que aparecen; es posible que la tarjeta gráfica tenga daños. En casos más graves, la placa también puede verse afectada provocando ese tipo de problemas. Soluciones: Soporte técnico a domicilio o traer el equipo al taller para revisión.</p>
+                <h4>Teclado no responder, teclas sueltas</h4>
+                <p>El teclado del Macbook está integrado dentro del equipo como en todos los portátiles. Si lo que necesitas cambiar es el teclado completo, nosotros podemos llevarlo a cabo. Si al encender tu Macbook no puedes usar el teclado porque no lo reconoce, quizá sea un problema de conexión. Soluciones: Soporte técnico a domicilio o traer el equipo al taller para revisión.</p>
+                <h4>MacBook se calienta demasiado y se apaga</h4>
+                <p>Si la batería está en mal estado puede inducir al sobre calentamiento de tu MacBook pudiendo llegar a quemar. Si tu Macbook y su batería están en orden, el problema puede venir de algún fallo en el procesador o en la placa, esto produce que el propio sistema exija más potencia para funcionar dando lugar al aumento de temperatura. Por otra parte, los Macbook tiene un sistema de refrigeración que está basado en una serie de ventiladores que deben están limpios para que el equipo funcione correctamente. Si notas que tu Macbook se calienta bastante puede deberse a que estos ventiladores estén bloqueados por el polvo o suciedad. Soluciones: Soporte técnico a domicilio o traer el equipo al taller para revisión.</p>
+                <button type="button" class="hp-btn hp-btn-primary"><a href="https://support.apple.com/es-es/HT201608">¿Cómo identificar el modelo de mi MacBook</a></button><br>
             </div>
         </section>
     </main>
-    <br>
-    <hr>
+
     <!-- Pie de pagina - Footer -->
-    <footer>
-        <div class="footer-content">
-            <img src="img/logo-b.png" alt="Logo Soporte Apple Mac" class="brand">
+    <footer class="hp-container-fluid hp-p hp-row hp-footer hp-bg-gray">
+        <div class="hp-col">
+            <a><img src="img/brand/logo-soporte-apple-mac-b.svg" alt="Logo Soporte Apple Mac"></a>
+            <p>© 2021, Soporte Apple Mac</p>
+        </div>
+        <div class="hp-col">
             <address>
                 <ul>
                     <li><a href="#"> +56 99999999</a></li>
@@ -46,12 +60,8 @@
                     <li>Santiago, Chile</li>
                 </ul>
             </address>
+            <a class="hp-link" href="#">Subir</a>
         </div>
-        <hr>
-        <div class="copyright">
-            <p>© 2021, Soporte Apple Mac</p>
-            <button><a href="#">Subir</a></button>
-        </div>
-      </footer>
+    </footer>
 </body>
 </html>

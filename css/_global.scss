@@ -1,0 +1,67 @@
+/**
+* Name: Soporte Apple Mac
+* Author: Hermes Palencia
+*/
+
+/*=============== UI KIT ================*/
+
+/* Reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+  box-sizing: inherit;
+  }
+  
+  body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  }
+
+// VARIABLES
+
+// Font
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+  $primary-font-family:'Source Sans Pro', sans-serif !default;
+  $secondary-font-family:'Source Sans Pro', sans-serif;
+  $font-weight-general:400 !default;
+
+// Color
+  $primary-color: #1d1d1f;
+  $secondary-color: #0088CC;
+  $secondary-color-grandient: linear-gradient(#0088CC, #0070c9);
+
+// Therme-Color
+  $dark: #1d1d1f;
+  $info: #17a2b8;
+  $success: #198754;
+  $danger: #ff0000;
+  $warning: #ffc107;
+  $gray: #f2f2f7;
+  $p-color: #5a6268;
+  $link-color:#0088CC;
+
+  $theme-colors: (
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "gray":       $gray,
+  "dark":       $dark
+  );
+
+// Paragraph styles
+  $font-h1: 40px;
+  $font-h2: 32px;
+  $font-h3: 28px;
+  $font-h4: 24px;
+  $font-h5: 20px;
+  $font-h6: 16px;
+
+
+

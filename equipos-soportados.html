@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,37 +10,36 @@
 </head>
 <body>
     <!-- Encabezado - Header -->
-    <header>
-        <img src="img/logo-w.png" alt="Logo Soporte Apple Mac" class="brand">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="equipos-soportados.html">Equipos soportados</a></li>
-                <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="hp-header">
+        <nav class="navBar">
+            <a><img src="img/brand/logo-soporte-apple-mac.svg" alt="Logo Soporte Apple Mac"></a>
+                <ul class="navBar__link">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="equipos-soportados.html">Equipos soportados</a></li>
+                    <li><a href="fallas-comunes.html">Fallas Comunes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="active"><a href="contacto.html">Soporte</a></li>
+                </ul>
         </nav>
-        <button><a href="contacto.html">Soporte</a></button>
     </header>
-    <br>
     <main>
         <!-- Equipos soportados -->
-        <section class="container">
-            <div id="grid">
-                <div id="titulo">
+        <section class="hp-container-fluid hp-p">
+            <div class="hp-grid hp-grid__equipos">
+                <div class="titulo">
                     <h2>Equipos soportados</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, harum!</p>
                 </div>
-                    <div id="equipo1">
+                    <div class="equipo1">
                         <img src="img/img-background.jpg" alt="Equipo 1" width="132px">
                         <h4>Macbook</h4>
                     </div>
-                    <div id="equipo2">
+                    <div class="equipo2">
                         <img src="img/img-background.jpg" alt="Equipo 1" width="132px">
                         <h4>Macbook Pro</h4>
                     </div>
-                    <div id="equipo3">
+                    <div class="equipo3">
                         <img src="img/img-background.jpg" alt="Equipo 1" width="132px">
                         <h4>iMac</h4>
                     </div>
@@ -48,9 +47,12 @@
         </section>
     </main>
     <!-- Pie de pagina - Footer -->
-    <footer>
-        <div class="footer-content">
-            <img src="img/logo-b.png" alt="Logo Soporte Apple Mac" class="brand">
+    <footer class="hp-container-fluid hp-p hp-row hp-footer hp-bg-gray">
+        <div class="hp-col">
+            <a><img src="img/brand/logo-soporte-apple-mac-b.svg" alt="Logo Soporte Apple Mac"></a>
+            <p>© 2021, Soporte Apple Mac</p>
+        </div>
+        <div class="hp-col">
             <address>
                 <ul>
                     <li><a href="#"> +56 99999999</a></li>
@@ -58,12 +60,8 @@
                     <li>Santiago, Chile</li>
                 </ul>
             </address>
+            <a class="hp-link" href="#">Subir</a>
         </div>
-        <hr>
-        <div class="copyright">
-            <p>© 2021, Soporte Apple Mac</p>
-            <button><a href="#">Subir</a></button>
-        </div>
-      </footer>
+    </footer>
 </body>
 </html>
