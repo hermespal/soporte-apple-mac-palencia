@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 62.5%;
 }
 
 *, *:before, *:after {
@@ -26,46 +26,46 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  font-size: 1.6rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
-  line-height: 26px;
+  line-height: 1.2;
   margin: 0;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 20rem;
   font-weight: 500;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
 p {
-  line-height: 28px;
   color: #5a6268;
 }
 

@@ -8,7 +8,7 @@
 /* Reset */
 html {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 62.5%;
   }
   
   *, *:before, *:after {
@@ -56,12 +56,12 @@ html {
   );
 
 // Paragraph styles
-  $font-h1: 40px;
-  $font-h2: 32px;
-  $font-h3: 28px;
-  $font-h4: 24px;
-  $font-h5: 20px;
-  $font-h6: 16px;
+  $font-h1: 4rem;
+  $font-h2: 3.2rem;
+  $font-h3: 2.8rem;
+  $font-h4: 2.4rem;
+  $font-h5: 20rem;
+  $font-h6: 1.6rem;
 
 
 
