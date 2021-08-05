@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
 * Name: Soporte Apple Mac
 * Author: Hermes Palencia
@@ -56,7 +57,7 @@ h4 {
 }
 
 h5 {
-  font-size: 20rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -66,11 +67,15 @@ h6 {
 }
 
 p {
-  color: #5a6268;
+  color: #86868b;
 }
 
 ul {
   list-style-position: inside;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Font color */
@@ -79,7 +84,7 @@ ul {
 }
 
 .hp-text-secondary {
-  color: #0088CC;
+  color: #06c;
 }
 
 .hp-text-white {
@@ -103,14 +108,13 @@ ul {
 }
 
 .hp-bg-secondary {
-  background-color: #0088CC;
+  background-color: #06c;
 }
 
 .hp-bg-gray {
   background-color: #f2f2f7;
 }
 
-/* Custom Class */
 /* img */
 .hp-img-fluid {
   max-width: 100%;
@@ -124,43 +128,43 @@ ul {
 }
 
 .hp-m-20 {
-  margin: 20px;
+  margin: 2rem;
 }
 
 .hp-p {
-  padding: 50px 100px;
+  padding: 5rem 10rem;
 }
 
 .hp-p-20 {
-  padding: 20px;
+  padding: 2rem;
 }
 
 .hp-px-20 {
-  padding: 0px 20px;
+  padding: 0px 2rem;
 }
 
 .hp-py-20 {
-  padding: 20px 0px;
+  padding: 2rem 0px;
 }
 
 .hp-py-10 {
-  padding: 10px 0px;
+  padding: 1rem 0px;
 }
 
 .hp-px-10 {
-  padding: 0px 10px;
+  padding: 0px 1rem;
 }
 
 .hp-gap-10 {
-  gap: 10px;
+  gap: 0.4rem;
 }
 
 .hp-prCol {
-  padding: 50px 50px 50px 100px;
+  padding: 5rem 5rem 5rem 10rem;
 }
 
 .hp-plCol {
-  padding: 50px 100px 50px 50px;
+  padding: 5rem 10rem 5rem 5rem;
 }
 
 /* Layout - Flexbox */
@@ -229,8 +233,8 @@ ul {
 /* Button - Link */
 .hp-btn {
   border: none;
-  border-radius: 32px;
-  padding: 6px 16px;
+  border-radius: 3.2rem;
+  padding: 0.6rem 1.6rem;
   cursor: pointer;
   border-style: none;
   font-size: inherit;
@@ -243,10 +247,10 @@ ul {
 
 .hp-btn-primary {
   color: #fff;
-  background-color: #0088CC;
+  background-color: #06c;
 }
 .hp-btn-primary:hover {
-  background-color: linear-gradient(#0088CC, #0070c9);
+  background-color: #0059b3;
   color: #fff;
 }
 .hp-btn-primary a:hover {
@@ -255,12 +259,12 @@ ul {
 }
 
 .hp-btn-outline-primary {
-  color: #0088CC;
+  color: #06c;
   background-color: transparent;
-  border: 1px solid #0088CC;
+  border: 0.1rem solid #06c;
 }
 .hp-btn-outline-primary:hover {
-  background-color: #0088CC;
+  background-color: #06c;
   color: #fff;
 }
 .hp-btn-outline-primary a:hover {
@@ -273,7 +277,7 @@ ul {
   background-color: #1d1d1f;
 }
 .hp-btn-secondary:hover {
-  background-color: #0088CC;
+  background-color: #06c;
   color: #fff;
 }
 .hp-btn-secondary a:hover {
@@ -284,7 +288,7 @@ ul {
 .hp-btn-outline-secondary {
   color: #1d1d1f;
   background-color: transparent;
-  border: 1px solid #1d1d1f;
+  border: 0.1rem solid #1d1d1f;
 }
 .hp-btn-outline-secondary:hover {
   background-color: #1d1d1f;
@@ -297,11 +301,30 @@ ul {
 
 .hp-link {
   text-decoration: none;
-  color: #0088CC;
+  color: #06c;
 }
 .hp-link:hover {
-  color: #0088CC;
+  color: #0059b3;
   text-decoration: underline;
+}
+
+/* Form */
+.hp-alert {
+  position: relative;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.hp-alert--danger {
+  color: "danger";
+  background-color: #f8d7dabd;
+  border-color: #f5c2c7;
+}
+
+.hp-alert--success {
+  color: "success";
+  background-color: #d1e7dd94;
+  border-color: #badbcc;
 }
 
 /* Header - Navbar */
@@ -310,7 +333,7 @@ ul {
   position: sticky;
   top: 0;
   z-index: 2;
-  padding: 0px 100px;
+  padding: 0px 10rem;
   background-color: #1d1d1f;
 }
 
@@ -320,7 +343,7 @@ ul {
   justify-content: space-between;
 }
 .navBar img {
-  width: 64px;
+  width: 6.4rem;
   cursor: pointer;
 }
 
@@ -329,14 +352,14 @@ ul {
   padding: 0;
 }
 .navBar__link li {
-  border-radius: 32px;
-  padding: 3px 16px;
-  margin: 2px;
+  border-radius: 3.2rem;
+  padding: 0.3rem 1.6rem;
+  margin: 0.2rem;
   list-style-type: none;
   transition: 0.3s;
 }
 .navBar__link li:hover {
-  background-color: #0088CC;
+  background-color: #06c;
   color: #fff;
 }
 .navBar__link a {
@@ -345,7 +368,7 @@ ul {
   color: #fff;
 }
 .navBar__link .active {
-  background-color: #0088CC;
+  background-color: #06c;
   color: #fff;
 }
 
@@ -354,14 +377,54 @@ ul {
   animation: showToggle 350ms ease-in-out both;
 }
 
+.toggle {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 1rem;
+  padding: 0;
+}
+.toggle span {
+  background-color: #fff;
+  display: block;
+  height: 0.2rem;
+  width: 3.8rem;
+  margin: 1rem auto;
+  border-radius: 0.2rem;
+}
+.toggle .rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* Animaciones NavBar */
+@keyframes showToggle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.br-1.animated {
+  transform: rotate(-45deg) translate(-1rem, 0.8rem);
+}
+
+.br-2.animated {
+  opacity: 0;
+}
+
+.br-3.animated {
+  transform: rotate(45deg) translate(-1rem, -0.8rem);
+}
+
 /* Footer */
 .hp-footer {
   clear: both;
   align-items: center;
-  justify-content: space-between;
 }
 .hp-footer img {
-  width: 64px;
+  width: 6.4rem;
   cursor: pointer;
 }
 .hp-footer address {
@@ -372,25 +435,79 @@ ul {
   margin: 0;
   padding: 0;
 }
+.hp-footer address i {
+  padding: 0.5rem;
+}
 .hp-footer address a {
   color: #1d1d1f;
   text-decoration: none;
 }
 .hp-footer address a:hover {
-  color: #0088CC;
+  color: #06c;
   text-decoration: underline;
 }
-.hp-footer .hp-col:nth-child(2) {
-  text-align: right;
+
+/* Float Whatsapp */
+.hp-btn-whatsapp {
+  display: block;
+  position: fixed;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  text-align: left;
+  z-index: 999;
+}
+
+/* Pages - Components */
+.hp-bg-hero {
+  min-height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.hp-accordion {
+  background-color: #f2f2f7;
+  color: #1d1d1f;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 2rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.1s;
+}
+.hp-accordion:hover {
+  background-color: #f2f2f7;
+}
+.hp-accordion:after {
+  content: "+";
+  color: #1d1d1f;
+  float: right;
+  margin-left: 1rem;
+}
+.hp-accordion.active:after {
+  content: "−";
+}
+.hp-accordion .active {
+  background-color: #f2f2f7;
+}
+
+.hp-accordion--panel {
+  padding: 0 2rem;
+  border: 1px solid #f2f2f7;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 
 /* Inicio - Hero */
 .img-hero {
-  min-height: 85vh;
+  min-height: 90vh;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url(../img/img-hero-soporteapplemac.jpg) no-repeat center center;
+  background: url(../img/soporteapplemac-home-hero.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
 }
@@ -408,14 +525,14 @@ ul {
 }
 
 .transition__years {
-  margin-top: -20px;
-  padding: 10px;
+  margin-top: -2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
-  width: 100px;
-  height: 50px;
+  width: 10rem;
+  height: 5rem;
   background: #1d1d1f;
   color: white;
   transition: width 2s;
@@ -435,73 +552,180 @@ ul {
 }
 
 .hp-grid__equipos {
-  gap: 10px;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(6, 1fr);
-  margin: auto;
+  gap: 4rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  padding-bottom: 3rem;
+}
+.hp-grid__equipos img {
+  width: 4.8rem;
+  height: 5.4rem;
+  min-height: 5.4rem;
 }
 
-/* Pagina Equipos Soportados - Grid equipos */
-.hp-grid__equipos {
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-template-areas: "titulo titulo titulo" "equipo1 equipo2 equipo3";
+/* Inicio - Vias de reparacion */
+.vias-reparacion i {
+  font-size: 4rem;
+}
+.vias-reparacion .hp-col {
+  padding: 2rem;
+}
+
+/* Pagina Nosotros */
+.hp-bg-hero__nosotros {
+  background-image: url(../img/soporteapplemac-nosotros-01.jpg);
+}
+
+.table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.table th {
+  border: 0.1rem solid #f2f2f7;
+  padding: 1rem;
+  background-color: #ffc107;
+  color: #1d1d1f;
+}
+.table td {
+  border: 0.1rem solid #f2f2f7;
+  padding: 1rem;
+}
+.table td ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Pagina Fallas Comunes */
+.hp-bg-hero__fallasComunes {
+  background-image: url(../img/soporteapplemac-fallas-comunes-01.jpg);
+}
+
+.fallasComunes {
+  text-align: center;
+  color: white;
+}
+.fallasComunes p {
+  color: white;
+}
+
+.hp-grid__fallasComunes {
+  gap: 4rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  padding-bottom: 3rem;
+}
+.hp-grid__fallasComunes img {
+  width: 4.8rem;
+  height: 5.4rem;
+  min-height: 5.4rem;
+}
+
+.fallasComunes-os {
+  min-height: 100vh;
+  background: url(../img/soporteapplemac-fallas-comunes-02.jpg) no-repeat center right;
+  background-size: cover;
+}
+
+/* Pagina Equipos soportados */
+.hp-bg-hero__equiposSoportados {
+  background-image: url(../img/soporteapplemac-equipos-soportados-01.jpg);
+}
+
+.hp-grid__equiposSoprtados {
+  gap: 4rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  padding-bottom: 3rem;
+}
+.hp-grid__equiposSoprtados img {
+  width: 4.8rem;
+  height: 5.4rem;
+  min-height: 5.4rem;
+}
+
+/* Pagina Contacto */
+.hp-bg-hero__contacto {
+  background-image: url(../img/soporteapplemac-contacto-01.jpg);
+}
+
+.contacto {
   text-align: center;
 }
-.hp-grid__equipos .titulo {
-  grid-area: auto;
-  grid-column: span 3;
+.contacto ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.contacto ul li {
+  padding: 3rem;
+}
+.contacto i {
+  font-size: 3rem;
+  padding: 0.5rem;
+}
+.contacto a {
+  color: #1d1d1f;
+  text-decoration: none;
+}
+.contacto a:hover {
+  color: #06c;
+  text-decoration: underline;
 }
 
-/* Pagina Nosotros - Tabla */
-.hp-table {
+.contacto-form {
   width: 100%;
-  border-collapse: collapse;
-  border: 1px solid black;
+  margin: auto;
+  padding: 1rem;
 }
-.hp-table tr {
-  border: 1px solid black;
+.contacto-form select {
+  height: 4rem;
 }
-.hp-table th {
-  text-align: left;
-  border: 1px solid black;
-  padding: 10px;
+.contacto-form button {
+  margin-top: 1rem;
 }
-.hp-table td {
-  border: 1px solid black;
-  padding: 10px;
+.contacto-form label {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  margin: auto 0;
 }
 
-/* Pagina Fallas Comunes - Fallas */
+.contacto-form--input {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid #1d1d1f;
+  background-color: inherit;
+  color: #1d1d1f;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  margin: 0.4rem 0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.contacto-form--input:focus {
+  border: 0.1rem solid #06c;
+}
+
+.contacto-form--radio {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  margin: auto 0;
+}
+
 /* Breakpoints */
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {
-  .hp-row, .hp-row--reverse {
-    flex-direction: column;
-  }
-
-  .hp-row--reverse {
-    flex-direction: column-reverse;
-  }
-
-  .hp-p {
-    padding: 50px;
-  }
-
-  .hp-prCol {
-    padding: 50px 50px 20px 50px;
-  }
-
-  .hp-plCol {
-    padding: 50px 100px 50px 50px;
-  }
-
+/* Small devices (Desktop, less than 1024px) */
+@media (max-width: 1024px) {
   .hp-header {
     padding: 0px;
   }
   .hp-header img {
-    margin-left: 50px;
+    margin-left: 5rem;
   }
 
   .navBar {
@@ -525,39 +749,83 @@ ul {
   .navBar__link li {
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding: 2rem;
   }
 
-  .hp-footer img {
+  .toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 2.5rem;
+    right: 5rem;
+    transition: 0.2s 0.1s;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .hp-row, .hp-row--reverse {
+    flex-direction: column;
+  }
+
+  .hp-row--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .hp-p {
+    padding: 5rem;
+  }
+
+  .hp-prCol {
+    padding: 5rem 5rem 2rem 5rem;
+  }
+
+  .hp-plCol {
+    padding: 5rem 10rem 5rem 5rem;
+  }
+
+  .hp-footer {
     text-align: center;
-    transform: translateX(80%);
   }
   .hp-footer address {
     text-align: center;
   }
-  .hp-footer .hp-col:nth-child(2) {
-    text-align: center;
+  .hp-footer address li {
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .contacto ul li {
+    padding: 0.5rem;
   }
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
   .hp-p {
-    padding: 50px 20px;
+    padding: 5rem 2rem;
   }
 
   .hp-prCol {
-    padding: 50px 20px;
+    padding: 5rem 2rem;
   }
 
   .hp-plCol {
-    padding: 50px 20px;
+    padding: 5rem 2rem;
   }
 
   .hp-header {
     padding: 0px;
   }
   .hp-header img {
-    margin-left: 20px;
+    margin-left: 2rem;
+  }
+
+  .toggle {
+    right: 2rem;
   }
 }
 

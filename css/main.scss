@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6{
   ul{
     list-style-position: inside;
   }
+  
+  a{
+    text-decoration: none;
+  }
 
 /* Font color */
 
@@ -94,8 +98,6 @@ h1, h2, h3, h4, h5, h6{
   background-color: global.$gray;
 }
 
-/* Custom Class */
-
 /* img */
 .hp-img-fluid{
   max-width: 100%; 
@@ -110,43 +112,43 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .hp-m-20{
-  margin: 20px;
+  margin: 2rem;
 }
 
 .hp-p{
-  padding: 50px 100px;
+  padding: 5rem 10rem;
 }
 
 .hp-p-20{
-  padding: 20px;
+  padding: 2rem;
 }
 
 .hp-px-20{
-  padding: 0px 20px;
+  padding: 0px 2rem;
 }
 
 .hp-py-20{
-  padding: 20px 0px;
+  padding: 2rem 0px;
 }
 
 .hp-py-10{
-  padding: 10px 0px;
+  padding: 1rem 0px;
 }
 
 .hp-px-10{
-  padding: 0px 10px;
+  padding: 0px 1rem;
 }
 
 .hp-gap-10{
-  gap: 10px;
+  gap: .4rem;
 }
 
 .hp-prCol{
-  padding: 50px 50px 50px 100px ;
+  padding: 5rem 5rem 5rem 10rem ;
 }
 
 .hp-plCol{
-  padding: 50px 100px 50px 50px ;
+  padding: 5rem 10rem 5rem 5rem ;
 }
 
 /* Layout - Flexbox */
@@ -216,8 +218,8 @@ h1, h2, h3, h4, h5, h6{
 
 .hp-btn{
   border: none;
-  border-radius: 32px;
-  padding: 6px 16px;
+  border-radius: 3.2rem;
+  padding: .6rem 1.6rem;
   cursor: pointer;
   border-style: none;
   font-size: inherit;
@@ -232,7 +234,7 @@ h1, h2, h3, h4, h5, h6{
   color: #fff;
   background-color: global.$secondary-color;
   &:hover{
-      background-color: global.$secondary-color-grandient;
+      background-color: darken(global.$secondary-color, 5%);
       color:#fff;
   }
   a:hover{
@@ -244,7 +246,7 @@ h1, h2, h3, h4, h5, h6{
 .hp-btn-outline-primary{
   color: global.$secondary-color;
   background-color: transparent;
-  border: 1px solid global.$secondary-color;
+  border: .1rem solid global.$secondary-color;
   &:hover{
       background-color: global.$secondary-color;
       color:#fff;
@@ -271,7 +273,7 @@ h1, h2, h3, h4, h5, h6{
 .hp-btn-outline-secondary{
 color: global.$primary-color;
 background-color: transparent;
-border: 1px solid global.$primary-color;
+border: .1rem solid global.$primary-color;
 &:hover{
     background-color: global.$primary-color;
     color:#fff;
@@ -286,9 +288,29 @@ a:hover{
   text-decoration: none;
   color: global.$secondary-color;
   &:hover{
-  color: global.$secondary-color;
+  color: darken(global.$secondary-color, 5%);
   text-decoration: underline;
   }
+}
+
+ /* Form */
+
+.hp-alert{
+  position: relative;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.hp-alert--danger{
+  color: "danger";
+  background-color: #f8d7dabd;
+  border-color: #f5c2c7;
+}
+
+.hp-alert--success {
+  color: "success";
+  background-color: #d1e7dd94;
+  border-color: #badbcc;
 }
 
 /* Header - Navbar */
@@ -298,7 +320,7 @@ a:hover{
   position: sticky;
   top: 0;
   z-index: 2;
-  padding: 0px 100px;
+  padding: 0px 10rem;
   background-color: global.$primary-color;
 }
 
@@ -307,7 +329,7 @@ a:hover{
   align-items:center;
   justify-content: space-between;
   img{
-    width: 64px;
+    width: 6.4rem;
     cursor: pointer;
   }
 }
@@ -316,9 +338,9 @@ a:hover{
   display:flex;
   padding:0;
   li{
-      border-radius: 32px;
-      padding: 3px 16px;
-      margin: 2px;
+      border-radius: 3.2rem;
+      padding: .3rem 1.6rem;
+      margin: .2rem;
       list-style-type: none;
       transition: 0.3s;
       &:hover{
@@ -342,14 +364,52 @@ a:hover{
   animation: showToggle 350ms ease-in-out both;
 }
 
+.toggle{
+  display:none;
+  background-color:transparent;
+  cursor: pointer;
+  border:none;
+  margin:1rem;
+  padding:0;
+  span{
+      background-color: #fff;
+      display:block;
+      height: .2rem;
+      width: 3.8rem;
+      margin: 1rem auto;
+      border-radius:.2rem;    
+    }
+  .rotate:hover{
+      transform:rotate(360deg);
+    }
+  }
+
+/* Animaciones NavBar */
+  
+@keyframes showToggle {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.br-1.animated{
+  transform: rotate(-45deg) translate(-1rem, .8rem);
+}
+
+.br-2.animated{
+  opacity: 0;
+}
+
+.br-3.animated{
+  transform: rotate(45deg) translate(-1rem, -.8rem);
+}
+
 /* Footer */
 
 .hp-footer{
   clear: both;
   align-items: center;
-  justify-content: space-between;
   img{
-    width: 64px;
+    width: 6.4rem;
     cursor: pointer;
   }
   address{
@@ -358,6 +418,9 @@ a:hover{
       list-style-type: none;
       margin: 0;
       padding: 0;
+    }
+    i{
+      padding: .5rem;
     }
     a{
       color: global.$primary-color;
@@ -368,19 +431,74 @@ a:hover{
         }
     }
   }
-  .hp-col:nth-child(2){
-    text-align: right;
+
+}
+
+/* Float Whatsapp */
+.hp-btn-whatsapp{
+  display:block;
+  position: fixed;
+  left:1.5rem;
+  bottom:1.5rem;
+  text-align:left;
+  z-index:999;
+}
+
+/* Pages - Components */
+
+// Hero
+.hp-bg-hero{
+  min-height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+// Accordion
+.hp-accordion{
+  background-color: global.$gray;
+  color: global.$primary-color;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 2rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.1s;
+  &:hover {
+    background-color: global.$gray;
   }
+  &:after {
+    content: '\002B';
+    color: global.$primary-color;
+    float: right;
+    margin-left: 1rem;
+  }
+  &.active:after {
+    content: "\2212";
+  }
+  .active{
+    background-color: global.$gray;
+  }
+}
+
+.hp-accordion--panel{
+  padding: 0 2rem;
+  border: 1px solid global.$gray;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 
 /* Inicio - Hero */
 
 .img-hero{
-  min-height: 85vh;
+  min-height: 90vh;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url(../img/img-hero-soporteapplemac.jpg) no-repeat center center;
+  background: url(../img/soporteapplemac-home-hero.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
   p{
@@ -399,14 +517,14 @@ a:hover{
 }
 
 .transition__years{
-  margin-top: -20px;
-  padding: 10px;
+  margin-top: -2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
-  width: 100px;
-  height: 50px;
+  width: 10rem;
+  height: 5rem;
   background: global.$primary-color;
   color: white;
   transition: width 2s;
@@ -427,79 +545,182 @@ a:hover{
 }
 
 .hp-grid__equipos{
-  gap: 10px;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(6, 1fr); 
-  margin: auto;
+  gap: 4rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  img{
+    width: 4.8rem;
+    height: 5.4rem;
+    min-height: 5.4rem;
+  }
+  padding-bottom: 3rem;
 }
 
-/* Pagina Equipos Soportados - Grid equipos */
+/* Inicio - Vias de reparacion */
 
-.hp-grid__equipos{
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-template-areas: 
-      "titulo titulo titulo"
-      "equipo1 equipo2 equipo3";
-  text-align: center;
-  .titulo{
-    grid-area: auto;
-    grid-column: span 3;
+.vias-reparacion{
+  i{
+    font-size: 4rem;
+  }
+  .hp-col{
+    padding: 2rem;
   }
 }
 
-/* Pagina Nosotros - Tabla */
-.hp-table{
+
+/* Pagina Nosotros */
+.hp-bg-hero__nosotros{
+  background-image: url(../img/soporteapplemac-nosotros-01.jpg);
+}
+
+.table{
   width: 100%;
+  margin: 0 auto;
   border-collapse: collapse;
-  border: 1px solid black;
-  tr{
-    border: 1px solid black;
-  }
   th{
-    text-align: left;
-    border: 1px solid black;
-    padding: 10px;
+    border: .1rem solid global.$gray;
+    padding: 1rem;
+    background-color:global.$warning;
+    color: global.$primary-color;
   }
   td{
-    border: 1px solid black;
-    padding: 10px;
+    border: .1rem solid global.$gray;
+    padding: 1rem;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
-/* Pagina Fallas Comunes - Fallas */
+/* Pagina Fallas Comunes */
+.hp-bg-hero__fallasComunes{
+  background-image: url(../img/soporteapplemac-fallas-comunes-01.jpg);
+}
 
+.fallasComunes{
+  text-align: center;
+  color: white;
+  p{
+    color: white;
+  }
+}
 
+.hp-grid__fallasComunes{
+  gap: 4rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  img{
+    width: 4.8rem;
+    height: 5.4rem;
+    min-height: 5.4rem;
+  }
+  padding-bottom: 3rem;
+}
+
+.fallasComunes-os{
+  min-height: 100vh;
+  background: url(../img/soporteapplemac-fallas-comunes-02.jpg) no-repeat center right;
+  background-size:cover;
+}
+
+/* Pagina Equipos soportados */
+.hp-bg-hero__equiposSoportados{
+  background-image: url(../img/soporteapplemac-equipos-soportados-01.jpg);
+}
+
+.hp-grid__equiposSoprtados{
+  gap: 4rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  img{
+    width: 4.8rem;
+    height: 5.4rem;
+    min-height: 5.4rem;
+  }
+  padding-bottom: 3rem;
+}
+
+/* Pagina Contacto */
+.hp-bg-hero__contacto{
+  background-image: url(../img/soporteapplemac-contacto-01.jpg);
+}
+.contacto{
+  text-align: center;
+  ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      padding: 3rem;
+    }
+  }
+  i{
+    font-size: 3rem;
+    padding: .5rem;
+  }
+  a{
+    color: global.$primary-color;
+    text-decoration: none;
+    &:hover{
+      color: global.$secondary-color;
+      text-decoration: underline;
+      }
+  }
+}
+
+.contacto-form{
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  select{
+    height: 4rem;
+  }
+  button{
+    margin-top: 1rem;
+  }
+  label{
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    margin: auto 0;
+  }
+}
+.contacto-form--input{
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  width: 100%;
+  padding: 1rem;
+  border: .1rem solid global.$primary-color;
+  background-color: inherit;
+  color: global.$primary-color;
+  border-radius: .4rem;
+  box-sizing: border-box;
+  margin: .4rem 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &:focus {
+    border: .1rem solid global.$secondary-color;
+  }
+}
+.contacto-form--radio{
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  margin: auto 0;
+  
+}
 
 /* Breakpoints */
 
-  /* Small devices (landscape phones, less than 768px) */
-  @media (max-width: 768px) {
-  
-    .hp-row{
-      flex-direction: column;
-    }
-  
-    .hp-row--reverse{
-      flex-direction: column-reverse;
-    }
-
-    .hp-p{
-        padding: 50px;
-    }
-  
-    .hp-prCol{
-        padding: 50px 50px 20px 50px;
-    }
-       
-    .hp-plCol{
-        padding: 50px 100px 50px 50px ;
-    }
+/* Small devices (Desktop, less than 1024px) */
+@media (max-width: 1024px) {
     .hp-header{
       padding: 0px;
       img{
-          margin-left: 50px;
+          margin-left: 5rem;
       }
     }
     .navBar{
@@ -522,21 +743,64 @@ a:hover{
     li{
       text-align:center;
       width:100%;
-      padding:20px;   
+      padding:2rem;   
       }
     }
 
-    .hp-footer{
-      img{
-        text-align: center;
-        transform: translateX(80%)
-      }
+    .toggle{
+      display:block;
+      cursor:pointer;
+      position: absolute; 
+      top:2.5rem;
+      right:5rem;
+      transition: 0.2s  0.1s; 
+    }
 
+  }
+
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 768px) {
+  
+    .hp-row{
+      flex-direction: column;
+    }
+  
+    .hp-row--reverse{
+      flex-direction: column-reverse;
+    }
+
+    .hp-p{
+        padding: 5rem;
+    }
+  
+    .hp-prCol{
+        padding: 5rem 5rem 2rem 5rem;
+    }
+       
+    .hp-plCol{
+        padding: 5rem 10rem 5rem 5rem ;
+    }
+
+    .hp-footer{
+      text-align: center;
       address{
         text-align: center;
+        li{
+          display: inline-block;
+          padding-left: .5rem;
+          padding-right: .5rem;
+        }
       }
-      .hp-col:nth-child(2){
-        text-align: center;
+    }
+
+    .table{
+      width: 100%;
+    }
+    .contacto{
+      ul{
+        li{
+          padding: .5rem;
+        }
       }
     }
 
@@ -546,21 +810,26 @@ a:hover{
   @media (max-width: 576px)  {
 
     .hp-p{
-        padding: 50px 20px;
+        padding: 5rem 2rem;
     }
 
     .hp-prCol{
-      padding: 50px 20px;
+      padding: 5rem 2rem;
     }
   
     .hp-plCol{
-      padding: 50px 20px;
+      padding: 5rem 2rem;
     }
+
     .hp-header{
       padding: 0px;
       img{
-          margin-left: 20px;
+          margin-left: 2rem;
         }
+    }
+
+    .toggle{
+      right:2rem;
     }
 
   }

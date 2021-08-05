@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Soporte Apple Mac</title>
+    <title>Nosotros | Soporte Apple Mac</title>
+
     <!-- CSS personalized -->
     <link href="css/main.css" rel="stylesheet">
+
+    <!-- Metaname SEO -->
+    <meta name="description" content="Soporte tecnico de Equipos Apple en la VI Región - Chile.">
+    <meta name="author" content="Soporte Apple Mac">
+    <meta name="generator" content="Soporte Apple Mac 1.0">
+    <meta name="keywords" content="macbook, macbook air, imac, macbook pro, apple, reparacion, mac mini, soporte tecnico">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/brand/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/brand/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/brand/favicon-16.png">
+    <link rel="shortcut icon" href="img/brand/favicon.ico">
+
+    <!-- Icons Fontawesome - Bootstrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +42,11 @@
                     <li><a href="contacto.html">Contacto</a></li>
                     <li class="active"><a href="contacto.html">Soporte</a></li>
                 </ul>
+                <button class="toggle" type="button">   
+                    <span class="br-1"></span>
+                    <span class="br-2"></span>
+                    <span class="br-3"></span>
+                </button>
         </nav>
     </header>
 
@@ -31,7 +56,7 @@
             <div>
                 <h1>Soporte Técnico Apple</h1>
                 <p>Si necesitas reparar o mejorar tu equipo, nosotros somos tu mejor elección.</p>
-                <button class="hp-btn hp-btn-primary"><a href="contacto.html">Soporte</a></button>
+                <a class="hp-btn hp-btn-primary" href="contacto.html">Soporte</a>
             </div>
          </section>
 
@@ -39,70 +64,81 @@
          <section>
              <div class="hp-container-fluid hp-row hp-p nosotros">
                  <div class="hp-col">
-                    <h2>Somos el servicio técnico especializado en Apple</h2>
-                    <p>Somos expertos de la tecnología y fanáticos al igual que tú. Nos dedicamos a reparar y mantener tus equipos Apple para que funcionen como el primer día. Puedes solicitar tu soporte a domicilio o de manera remota sin salir de casa.</p>
-                    <a class="hp-link" href="nosotros.html">Leer más</a><br><br>
+                    <h2>Somos el servicio técnico especializado Apple</h2>
+                    <p>Somos expertos de la tecnología y fanáticos al igual que tú. Nos dedicamos <strong>a reparar y mantener tus equipos Apple</strong> para que funcionen como el primer día. Puedes solicitar tu soporte a domicilio o de manera remota sin salir de casa.</p>
+                    <a class="hp-link" href="nosotros.html">Leer más</a><br>
                     <h4>Nuestra experiencia</h4><br>
-                    <p class="transition__years">10 años</p>
+                    <p class="transition__years">3 años</p>
                  </div>
                  <div class="hp-col">
-                    <img src="img/macbook-pro-nosotros.png" alt="Nosotros" class="hp-img-fluid">
+                    <img src="img/soporteapplemac-home-nosotros.png" alt="Nosotros" class="hp-img-fluid">
                 </div>
              </div>
          </section>
 
          <!-- Equipos Soportados -->
-         <section>
-             <div class="hp-container-fluid hp-bg-primary hp-p hp-text-align hp-text-white">
-                 <div class="hp-textAlign-center">
-                     <h3>Equipos soportados</h3>
-                     <p>Nuestro soporte abarca los siguientes equipos:</p>
-                     <div class="hp-grid hp-grid__equipos">
-                         <div>
-                             <img src="img/macbook-pro.svg" alt="macbook" width="64px">
-                             <p>Macbook</p>
-                        </div>
-                        <div>
-                            <img src="img/macbook-air.svg" alt="macbook" width="64px">
-                            <p>Macbook Air</p>
-                       </div>
-                       <div>
-                            <img src="img/imac.svg" alt="macbook" width="64px">
-                            <p>iMac</p>
-                       </div>
-                        <div>
-                            <img src="img/mac-pro.svg" alt="macbook" width="64px">
-                            <p>Mac Pro</p>
-                        </div>
-                        <div>
-                            <img src="img/mac-mini.svg" alt="macbook" width="64px" height="80px">
-                            <p>Mac Mini</p>
-                       </div>
-                        <div>
-                            <img src="img/mac-osx.svg" alt="macbook" width="64px">
-                            <p>OS X</p>
-                        </div>
-
-                     </div>
-                     <button class="hp-btn hp-btn-primary"><a href="equipos-soportados.html">Leer más</a></button>
-                 </div>
-             </div>
-         </section>
+         <section class="hp-container-fluid hp-bg-primary hp-p hp-text-white hp-textAlign-center">
+            <h3>Equipos soportados</h3>
+            <p>Nuestro soporte abarca los siguientes equipos:</p>
+            <div class="hp-grid hp-grid__equipos">
+                <div>
+                    <img src="img/macbook-pro.svg" alt="Macbook Pro">
+                    <p>Macbook</p>
+                </div>
+                <div>
+                    <img src="img/macbook-air.svg" alt="Macbook Ai">
+                    <p>Macbook Air</p>
+                </div>
+                <div>
+                    <img src="img/imac.svg" alt="iMac">
+                    <p>iMac</p>
+                </div>
+                <div>
+                    <img src="img/mac-pro.svg" alt="Mac Pro">
+                    <p>Mac Pro</p>
+                </div>
+                <div>
+                    <img src="img/mac-mini.svg" alt="Mac Mini">
+                    <p>Mac Mini</p>
+                </div>
+                <div>
+                    <img src="img/mac-osx.svg" alt="OS X">
+                    <p>OS X</p>
+                </div>
+            </div>
+            <div class="hp-py-20">
+                <a class="hp-btn hp-btn-primary" href="fallas-comunes.html">Fallas comunes</a>
+            </div>
+        </section>
 
          
 
-        <!-- Fallas Comunes -->
+        <!-- Vias de reparación -->
         <section>
-        <div class="hp-container-fluid hp-row hp-p hp-align-center">
+        <div class="hp-container-fluid hp-p hp-textAlign-center">
             <div class="hp-col">
-                <h3>Fallas Comunes</h3>
-                <p>Ofrecemos las mejores soluciónes para tus equipos Apple, siempre y cuando tenga las fallas que nosotros atendendemos, para ello puedes leer nuestra seccion de equipos soportados, donde documentamos las fallas. <br><br>
-                <b>Importante:</b> Las fallas que requieran repuestos, estos mismos se traen bajo pedido y el cliente debe abonar el 50% minimo del valor del respuesto.
-                </p>
-                <a class="hp-link" href="fallas-comunes.html">Leer más</a><br><br>
+                <h3>¿Qué debes hacer para reparar tu dispositivo Apple?</h3>
+                <p>Te ofrecemos tres vías:<br><br>
             </div>
-            <div class="hp-col">
-                <img src="img/fallas-comunes.jpeg" alt="Fallas Comunes" class="hp-img-fluid hp-px-20">
+            <div class="hp-row vias-reparacion">
+                <div class="hp-col">
+                    <i class="bi bi-shop-window"></i>
+                    <h4>Llevar equipo a taller</h4>
+                    <p>Estamos abiertos de lunes a viernes y también sábados por la mañana. La visita debe ser con previo acuerdo para confirmar la recepción.</p>
+                    <a class="hp-btn hp-btn-primary" href="contacto.html">Solicitar</a>
+                </div>
+                <div class="hp-col">
+                    <i class="bi bi-truck"></i>
+                    <h4>Soporte a domicilio</h4>
+                    <p>Podemos realizar el soporte en tu domicilio (previa cita) y también podemos retirar tu equipo para llevarlo a taller. Se aplica un costo adicional dependiendo de la ubicación.</p>
+                    <a class="hp-btn hp-btn-primary" href="contacto.html">Solicitar</a>
+                </div>
+                <div class="hp-col">
+                    <i class="bi bi-chat-square-dots"></i>
+                    <h4>Cotizar reparación Online</h4>
+                    <p>Puedes consultar el costo de tu reparación por cualquiera de nuestros canales de contacto.</p>
+                    <a class="hp-btn hp-btn-primary" href="contacto.html">Solicitar</a>
+                </div>
             </div>
         </div>
     </section>
@@ -113,18 +149,43 @@
     <footer class="hp-container-fluid hp-p hp-row hp-footer hp-bg-gray">
         <div class="hp-col">
             <a><img src="img/brand/logo-soporte-apple-mac-b.svg" alt="Logo Soporte Apple Mac"></a>
-            <p>© 2021, Soporte Apple Mac</p>
+            <!-- <p>© 2021, Soporte Apple Mac</p> -->
+            <p><script type="text/javascript">
+                copyright=new Date();
+                update=copyright.getFullYear();
+                document.write("&copy; Copyright " + update);
+                </script>, Soporte Apple Mac. Todos los derechos reservados.
+            </p>
+            <small>Soporte Apple Mac es un sitio Web independiente y no está afiliado, conectado o asociado en ninguna forma con Apple Inc. Apple y el logo de Apple son marcas registradas de Apple Inc.</small>
+            
         </div>
         <div class="hp-col">
             <address>
                 <ul>
-                    <li><a href="#"> +56 99999999</a></li>
-                    <li><a href="#"> contacto@soporteapplemac.com</a></li>
-                    <li>Santiago, Chile</li>
+                    <li><i class="bi bi-phone"></i><a href="tel:+56962907197">+56 962907197</a></li>
+                    <li><i class="bi bi-envelope"></i><a href="mailto:info@soporteapplemac.cl">info@soporteapplemac.cl</a></li>
+                    <li><i class="bi bi-geo-alt"></i>Machali, VI Región Chile</li>
                 </ul>
             </address>
-            <a class="hp-link" href="#">Subir</a>
         </div>
     </footer>
+
+  <!-- Button of Whatsapp  -->
+  <div class="hp-btn-whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=56." target="_blank"> 
+      <img src="img/btn_whatsapp.svg" alt="Whatsapp" width="60" height="60">
+    </a>
+  </div>
+
+  <!-- JS Files -->
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+  <!-- AOS CSS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -1,13 +1,34 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE soporte en taller>
+<soporte en taller lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Soporte Apple Mac</title>
+    <title>Soporte Apple Mac | Home</title>
+
     <!-- CSS personalized -->
     <link href="css/main.css" rel="stylesheet">
+
+    <!-- Metaname SEO -->
+    <meta name="description" content="Soporte tecnico de Equipos Apple en la VI Región - Chile.">
+    <meta name="author" content="Soporte Apple Mac">
+    <meta name="generator" content="Soporte Apple Mac 1.0">
+    <meta name="keywords" content="macbook, macbook air, imac, macbook pro, apple, reparacion, mac mini, soporte tecnico">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/brand/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/brand/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/brand/favicon-16.png">
+    <link rel="shortcut icon" href="img/brand/favicon.ico">
+
+    <!-- Icons Fontawesome - Bootstrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Encabezado - Header -->
     <header class="hp-header">
@@ -21,48 +42,78 @@
                     <li><a href="contacto.html">Contacto</a></li>
                     <li class="active"><a href="contacto.html">Soporte</a></li>
                 </ul>
+                <button class="toggle" type="button">   
+                    <span class="br-1"></span>
+                    <span class="br-2"></span>
+                    <span class="br-3"></span>
+                </button>
         </nav>
     </header>
+
     <main>
         <!-- Contacto -->
-        <section class="hp-container-fluid hp-p hp-row">
-            <div>
-                <h2>Contacto</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nihil?</p>
-                <fieldset>
-                    <legend>Formulario de contacto</legend>
-                    <form action="#">
-                        <label for="tipoDeEquipo">Tipo de Equipo</label><br>
-                        <input type="radio" id="macbook" name="tipoDeEquipo" value="macbook">
-                        <label for="macbook">Macbook</label><br>
-                        <input type="radio" id="iMac" name="tipoDeEquipo" value="iMac">
-                        <label for="iMac">iMac</label><br>
-                        <input type="radio" id="Varios" name="tipoDeEquipo" value="Varios">
-                        <label for="Varios">Otro</label>
-                        <br><br>
-        
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Nombre"><br><br>
-                        
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" placeholder="Apellido">
-                        <br><br>
+        <section class="hp-bg-hero hp-bg-hero__contacto"></section>
+        <section class="hp-container-fluid hp-p">
+            <div class="contacto">
+                <h1>Contacto</h1>
+                <p>Puedes contactarnos por cualquiera de nuestros canales de atención. <strong>Si quieres una atención mas rápida, puedes realizar tu consulta por Whatsapp o llamada.</strong></p>
+                <ul>
+                    <li><i class="bi bi-phone"></i><br><a href="tel:+56962907197">+56 962907197</a></li>
+                    <li><i class="bi bi-envelope"><br></i><a href="mailto:info@soporteapplemac.cl">info@soporteapplemac.cl</a></li>
+                    <li><i class="bi bi-geo-alt"><br></i>Machali, VI Región Chile</li>
+                </ul>
+            </div>
+            <div class="hp-row">
+                <div class="hp-col">
+                    <form class="contacto-form" id="formContact" novalidate>
+                        <p>Dejanos tus datos e información de tu requerimiento</p>
+                        <div class="hp-row hp-gap-10">
+                            <div class="hp-col">
+                            <input type="text" name="nameLast" class="contacto-form--input" id="nameLast" value="" placeholder="Nombre y Apellido" required>
+                            </div>
+                            <div class="hp-col">
+                                <input type="tel" name="phone" class="contacto-form--input" id="phone" value="" placeholder="Teléfono" required>
+                            </div>
+                            <div class="hp-gap-10">
+                                <input type="email" name="email" class="contacto-form--input" id="email" value="" placeholder="Email" required>
 
-                        <label for="ubicacion">Ubicacion</label>
-                        <select name="ubicacion" id="ubicacion">
-                            <option value="Santiago">Santiago</option>
-                            <option value="Regiones">Regiones</option>
-                        </select><br><br>
+                                <select name="equipo" class="contacto-form--input" id="equipo" required>
+                                    <option selected disabled value="">Seleccione un Equipo</option>
+                                    <option value="Macbook Air">Macbook Air</option>
+                                    <option value="Macbook Pro">Macbook Pro</option>
+                                    <option value="iMac">iMac</option>
+                                    <option value="Mac mini">Mac mini</option>
+                                    <option value="Mac Pro">Mac Pro</option>
+                                </select>
 
-                        <label for="mensaje">Mensaje</label><br>
-                        <textarea name="mensaje" id="mensaje" rows="3" placeholder="Describe la falla"></textarea>
-                        <br><br>
-                        
-                        <input type="submit" value="Enviar">
+                                <p>Tipo de soporte:</p>
+                                  <input class="contacto-form--radio" type="radio" id="taller" name="support" value="Llevar a taller">
+                                  <label for="taller">Llevar a taller</label>
+
+                                  <input class="contacto-form--radio" type="radio" id="domicilio" name="support" value="Soporte a domicilio">
+                                  <label for="domicilio">Soporte a domicilio</label>
+
+                                  <input class="contacto-form--radio" type="radio" id="retiro" name="support" value="Retiro de equipo">
+                                  <label for="retiro">Retiro de equipo</label>
+
+                                <textarea class="contacto-form--input" name="request" id="request" rows="3" placeholder="Describa la falla o requerimiento" value="" required></textarea>
+
+                                <input type="text" name="address" class="contacto-form--input" id="address" value="" placeholder="Dirección (Solo para retiros o soporte a domicilio">
+
+                                <button class="hp-btn hp-btn-primary" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                        <div class="hp-d-none hp-alert hp-alert--success" id="successMessage">Mensaje enviado con éxito</div>
+                        <div class="hp-d-none hp-alert hp-alert--danger" id="messageError"></div>
                     </form>
-                </fieldset>
-
-
+                </div>
+                <div class="hp-col hp-p-20">
+                    <h5>Nuestra cobertura a domicilio</h5>
+                    <p><strong>Podemos realizar soporte o retirar su equipo en las siguientes comunas:</strong> Rancagua, Machali, Codegua, Rengo, Requinoa, San Francisco de Mostazal.</p>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69943.70249026337!2d-70.77661165535092!3d-34.15909424242614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96634367bdef13d3%3A0xd973fc8366ad54f7!2sRancagua%2C%20O&#39;Higgins!5e0!3m2!1ses-419!2scl!4v1628126898389!5m2!1ses-419!2scl" width="100%" height="70%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -72,18 +123,45 @@
     <footer class="hp-container-fluid hp-p hp-row hp-footer hp-bg-gray">
         <div class="hp-col">
             <a><img src="img/brand/logo-soporte-apple-mac-b.svg" alt="Logo Soporte Apple Mac"></a>
-            <p>© 2021, Soporte Apple Mac</p>
+            <!-- <p>© 2021, Soporte Apple Mac</p> -->
+            <p><script type="text/javascript">
+                copyright=new Date();
+                update=copyright.getFullYear();
+                document.write("&copy; Copyright " + update);
+                </script>, Soporte Apple Mac. Todos los derechos reservados.
+            </p>
+            <small>Soporte Apple Mac es un sitio Web independiente y no está afiliado, conectado o asociado en ninguna forma con Apple Inc. Apple y el logo de Apple son marcas registradas de Apple Inc.</small>
+            
         </div>
         <div class="hp-col">
             <address>
                 <ul>
-                    <li><a href="#"> +56 99999999</a></li>
-                    <li><a href="#"> contacto@soporteapplemac.com</a></li>
-                    <li>Santiago, Chile</li>
+                    <li><i class="bi bi-phone"></i><a href="tel:+56962907197">+56 962907197</a></li>
+                    <li><i class="bi bi-envelope"></i><a href="mailto:info@soporteapplemac.cl">info@soporteapplemac.cl</a></li>
+                    <li><i class="bi bi-geo-alt"></i>Machali, VI Región Chile</li>
                 </ul>
             </address>
-            <a class="hp-link" href="#">Subir</a>
         </div>
     </footer>
+
+  <!-- Button of Whatsapp  -->
+  <div class="hp-btn-whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=56." target="_blank"> 
+      <img src="img/btn_whatsapp.svg" alt="Whatsapp" width="60" height="60">
+    </a>
+  </div>
+
+  <!-- JS Files -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+  <!-- AOS CSS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-</html>
+</soporte en taller>
