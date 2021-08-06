@@ -1,5 +1,5 @@
-<!DOCTYPE soporte en taller>
-<soporte en taller lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +21,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/brand/favicon-16.png">
     <link rel="shortcut icon" href="img/brand/favicon.ico">
 
-    <!-- Icons Fontawesome - Bootstrap -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="vendor/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -52,66 +51,68 @@
 
     <main>
         <!-- Contacto -->
-        <section class="hp-bg-hero hp-bg-hero__contacto" data-aos="fade-up"></section>
-        <section class="hp-container-fluid hp-p">
-            <div class="contacto">
-                <h1>Contacto</h1>
-                <p>Puedes contactarnos por cualquiera de nuestros canales de atención. <strong>Si quieres una atención mas rápida, puedes realizar tu consulta por Whatsapp o llamada.</strong></p>
-                <ul>
-                    <li><i class="bi bi-phone"></i><br><a href="tel:+56962907197">+56 962907197</a></li>
-                    <li><i class="bi bi-envelope"><br></i><a href="mailto:info@soporteapplemac.cl">info@soporteapplemac.cl</a></li>
-                    <li><i class="bi bi-geo-alt"><br></i>Machali, VI Región Chile</li>
-                </ul>
-            </div>
-            <div class="hp-row">
-                <div class="hp-col" data-aos="fade-up">
-                    <form class="contacto-form" id="formContact" novalidate>
-                        <p>Dejanos tus datos e información de tu requerimiento</p>
-                        <div class="hp-row hp-gap-10">
-                            <div class="hp-col">
-                            <input type="text" name="nameLast" class="contacto-form--input" id="nameLast" value="" placeholder="Nombre y Apellido" required>
-                            </div>
-                            <div class="hp-col">
-                                <input type="tel" name="phone" class="contacto-form--input" id="phone" value="" placeholder="Teléfono" required>
-                            </div>
-                            <div class="hp-gap-10">
-                                <input type="email" name="email" class="contacto-form--input" id="email" value="" placeholder="Email" required>
-
-                                <select name="equipo" class="contacto-form--input" id="equipo" required>
-                                    <option selected disabled value="">Seleccione un Equipo</option>
-                                    <option value="Macbook Air">Macbook Air</option>
-                                    <option value="Macbook Pro">Macbook Pro</option>
-                                    <option value="iMac">iMac</option>
-                                    <option value="Mac mini">Mac mini</option>
-                                    <option value="Mac Pro">Mac Pro</option>
-                                </select>
-
-                                <p>Tipo de soporte:</p>
-                                  <input class="contacto-form--radio" type="radio" id="taller" name="support" value="Llevar a taller">
-                                  <label for="taller">Llevar a taller</label>
-
-                                  <input class="contacto-form--radio" type="radio" id="domicilio" name="support" value="Soporte a domicilio">
-                                  <label for="domicilio">Soporte a domicilio</label>
-
-                                  <input class="contacto-form--radio" type="radio" id="retiro" name="support" value="Retiro de equipo">
-                                  <label for="retiro">Retiro de equipo</label>
-
-                                <textarea class="contacto-form--input" name="request" id="request" rows="3" placeholder="Describa la falla o requerimiento" value="" required></textarea>
-
-                                <input type="text" name="address" class="contacto-form--input" id="address" value="" placeholder="Dirección (Solo para retiros o soporte a domicilio">
-
-                                <button class="hp-btn hp-btn-primary" type="submit">Enviar</button>
-                            </div>
-                        </div>
-                        <div class="hp-d-none hp-alert hp-alert--success" id="successMessage">Mensaje enviado con éxito</div>
-                        <div class="hp-d-none hp-alert hp-alert--danger" id="messageError"></div>
-                    </form>
+        <section>
+            <div class="hp-bg-hero hp-bg-hero__contacto" data-aos="fade-up"></div>
+            <div class="hp-container-fluid hp-p">
+                <div class="contacto">
+                    <h1>Contacto</h1>
+                    <p>Puedes contactarnos por cualquiera de nuestros canales de atención. <strong>Si quieres una atención mas rápida, puedes realizar tu consulta por Whatsapp o llamada.</strong></p>
+                    <ul>
+                        <li><i class="bi bi-phone"></i><br><a href="tel:+56962907197">+56 962907197</a></li>
+                        <li><i class="bi bi-envelope"><br></i><a href="mailto:info@soporteapplemac.cl">info@soporteapplemac.cl</a></li>
+                        <li><i class="bi bi-geo-alt"><br></i>Machali, VI Región Chile</li>
+                    </ul>
                 </div>
-                <div class="hp-col hp-p-20">
-                    <h5>Nuestra cobertura a domicilio</h5>
-                    <p><strong>Podemos realizar soporte o retirar su equipo en las siguientes comunas:</strong> Rancagua, Machali, Codegua, Rengo, Requinoa, San Francisco de Mostazal.</p>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69943.70249026337!2d-70.77661165535092!3d-34.15909424242614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96634367bdef13d3%3A0xd973fc8366ad54f7!2sRancagua%2C%20O&#39;Higgins!5e0!3m2!1ses-419!2scl!4v1628126898389!5m2!1ses-419!2scl" width="100%" height="70%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="hp-row" data-aos="fade-up">
+                    <div class="hp-col" data-aos="fade-up">
+                        <form class="contacto-form" id="formContact" novalidate>
+                            <p>Dejanos tus datos e información de tu requerimiento</p>
+                            <div class="hp-row hp-gap-10">
+                                <div class="hp-col">
+                                <input type="text" name="nameLast" class="contacto-form--input" id="nameLast" value="" placeholder="Nombre y Apellido" required>
+                                </div>
+                                <div class="hp-col">
+                                    <input type="tel" name="phone" class="contacto-form--input" id="phone" value="" placeholder="Teléfono" required>
+                                </div>
+                                <div class="hp-gap-10">
+                                    <input type="email" name="email" class="contacto-form--input" id="email" value="" placeholder="Email" required>
+    
+                                    <select name="equipo" class="contacto-form--input" id="equipo" required>
+                                        <option selected disabled value="">Seleccione un Equipo</option>
+                                        <option value="Macbook Air">Macbook Air</option>
+                                        <option value="Macbook Pro">Macbook Pro</option>
+                                        <option value="iMac">iMac</option>
+                                        <option value="Mac mini">Mac mini</option>
+                                        <option value="Mac Pro">Mac Pro</option>
+                                    </select>
+    
+                                    <p>Tipo de soporte:</p>
+                                      <input class="contacto-form--radio" type="radio" id="taller" name="support" value="Llevar a taller">
+                                      <label for="taller">Llevar a taller</label>
+
+                                      <input class="contacto-form--radio" type="radio" id="domicilio" name="support" value="Soporte a domicilio">
+                                      <label for="domicilio">Soporte a domicilio</label>
+
+                                      <input class="contacto-form--radio" type="radio" id="retiro" name="support" value="Retiro de equipo">
+                                      <label for="retiro">Retiro de equipo</label>
+    
+                                    <textarea class="contacto-form--input" name="request" id="request" rows="3" placeholder="Describa la falla o requerimiento" required></textarea>
+    
+                                    <input type="text" name="address" class="contacto-form--input" id="address" value="" placeholder="Dirección (Solo para retiros o soporte a domicilio">
+    
+                                    <button class="hp-btn hp-btn-primary" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                            <div class="hp-d-none hp-alert hp-alert--success" id="successMessage">Mensaje enviado con éxito</div>
+                            <div class="hp-d-none hp-alert hp-alert--danger" id="messageError"></div>
+                        </form>
+                    </div>
+                    <div class="hp-col hp-p-20">
+                        <h5>Nuestra cobertura a domicilio</h5>
+                        <p><strong>Podemos realizar soporte o retirar su equipo en las siguientes comunas:</strong> Rancagua, Machali, Codegua, Rengo, Requinoa, San Francisco de Mostazal.</p>
+                        <div>
+                            <iframe class="contacto-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52812.3885925819!2d-70.70229854075222!3d-34.17768807627741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967b5445dba7606f%3A0xa08393a56260f5df!2sMachal%C3%AD%2C%20O&#39;Higgins!5e0!3m2!1ses-419!2scl!4v1628225960763!5m2!1ses-419!2scl" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,7 +125,7 @@
         <div class="hp-col">
             <a><img src="img/brand/logo-soporte-apple-mac-b.svg" alt="Logo Soporte Apple Mac"></a>
             <!-- <p>© 2021, Soporte Apple Mac</p> -->
-            <p><script type="text/javascript">
+            <p><script>
                 copyright=new Date();
                 update=copyright.getFullYear();
                 document.write("&copy; Copyright " + update);
@@ -164,4 +165,4 @@
     AOS.init();
   </script>
 </body>
-</soporte en taller>
+</html>

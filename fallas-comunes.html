@@ -21,9 +21,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/brand/favicon-16.png">
     <link rel="shortcut icon" href="img/brand/favicon.ico">
 
-    <!-- Icons Fontawesome - Bootstrap -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="vendor/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -52,53 +51,55 @@
 
     <main>
         <!-- Section - Fallas Comunes -->
-        <section class="hp-bg-hero hp-bg-hero__fallasComunes"></section>
-        <section class="hp-container-fluid hp-p hp-textAlign-center hp-bg-gray">
-            <div data-aos="fade-up">
-                <h1>Fallas Comunes</h1>
-                <p>Nuestro soporte abarca los siguientes equipos:</p>
-                <div class="hp-grid hp-grid__fallasComunes">
-                    <div>
-                        <img src="img/macbook-air_black.svg" alt="Macbook Air">
-                        <p>Macbook Air</p>
+        <section>
+            <div class="hp-bg-hero hp-bg-hero__fallasComunes"></div>
+            <div class="hp-container-fluid hp-p hp-textAlign-center hp-bg-gray">
+                <div data-aos="fade-up">
+                    <h1>Fallas Comunes</h1>
+                    <p>Nuestro soporte abarca los siguientes equipos:</p>
+                    <div class="hp-grid hp-grid__fallasComunes">
+                        <div>
+                            <img src="img/macbook-air_black.svg" alt="Macbook Air">
+                            <p>Macbook Air</p>
+                        </div>
+                        <div>
+                            <img src="img/macbook_pro_13_black.svg" alt="Macbook Pro 13">
+                            <p>Macbook Pro 13"</p>
+                        </div>
+                        <div>
+                            <img src="img/macbook_pro_16_black.svg" alt="Macbook Pro 16">
+                            <p>Macbook Pro 16"</p>
+                        </div>
+                        <div>
+                            <img src="img/imac_24_black.svg" alt="iMac 24">
+                            <p>iMac 24"</p>
+                        </div>
+                        <div>
+                            <img src="img/imac_27_black.svg" alt="iMac 27">
+                            <p>iMac 27"</p>
+                        </div>
+                        <div>
+                            <img src="img/mac_pro_black.svg" alt="Mac Pro">
+                            <p>Mac Pro</p>
+                        </div>
+                        <div>
+                            <img src="img/mac_mini_black.svg" alt="Mac mini">
+                            <p>Mac mini</p>
+                        </div>
+                        <div>
+                            <img src="img/mac_os_black.svg" alt="OS X">
+                            <p>OS X</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="img/macbook_pro_13_black.svg" alt="Macbook Pro 13">
-                        <p>Macbook Pro 13"</p>
-                    </div>
-                    <div>
-                        <img src="img/macbook_pro_16_black.svg" alt="Macbook Pro 16">
-                        <p>Macbook Pro 16"</p>
-                    </div>
-                    <div>
-                        <img src="img/imac_24_black.svg" alt="iMac 24">
-                        <p>iMac 24"</p>
-                    </div>
-                    <div>
-                        <img src="img/imac_27_black.svg" alt="iMac 27">
-                        <p>iMac 27"</p>
-                    </div>
-                    <div>
-                        <img src="img/mac_pro_black.svg" alt="Mac Pro">
-                        <p>Mac Pro</p>
-                    </div>
-                    <div>
-                        <img src="img/mac_mini_black.svg" alt="Mac mini">
-                        <p>Mac mini</p>
-                    </div>
-                    <div>
-                        <img src="img/mac_os_black.svg" alt="OS X">
-                        <p>OS X</p>
-                    </div>
+                    <a href="https://support.apple.com/es-es/HT201608" class="hp-btn hp-btn-primary">¿Cómo identificar el modelo de mi MacBook?</a>
                 </div>
-                <a href="https://support.apple.com/es-es/HT201608" class="hp-btn hp-btn-primary">¿Cómo identificar el modelo de mi MacBook?</a>
             </div>
         </section>
 
         <!-- Section - Accordion de Fallas -->
         <section class="hp-container-fluid hp-p" data-aos="fade-up">
             <div>
-                <h2 class="hp-textAlign-center">Fallas que reparamos</h2>
+                <h3 class="hp-textAlign-center">Fallas que reparamos</h3>
                 <p class="hp-textAlign-center">Te ofrecemos la mejor solución para tu equipo Macbook si se encuentra en alguna de las siguientes situaciones:</p>
                 <button class="hp-accordion">Macbook no enciende</button>
                 <div class="hp-accordion--panel">
@@ -136,29 +137,28 @@
                 </div>
                 <button class="hp-accordion">Iniciar el Diagnóstico Apple</button>
                 <div class="hp-accordion--panel">
-                <p><strong>Preparar la Mac</strong>
+                <p><strong>Preparar la Mac</strong></p>
                     <ol>
                         <li>Apaga la Mac.</li>
                         <li>Desconecta todos los dispositivos externos excepto el teclado, el mouse, la pantalla, la conexión Ethernet (si corresponde) y la conexión a la corriente de CA.</li>
                         <li>Asegúrate de que la Mac se encuentre en una superficie de trabajo rígida, plana, estable y con buena ventilación.</li>
                     </ol>
                 <br><hr><br>
-                <strong>Iniciar el Diagnóstico Apple</strong><br>
+                <p><strong>Iniciar el Diagnóstico Apple</strong><br>
                 Determina si estás usando una Mac con Apple Silicon y, luego, sigue los pasos apropiados: <br><br>
-                <b>Procesadores Intel</b>
+                <b>Procesadores Intel</b></p>
                 <ol>
                     <li>Enciende la Mac e, inmediatamente, mantén presionada la tecla D en el teclado mientras se inicia la Mac. </li>
                     <li>Deja de presionar el botón cuando veas una barra de progreso o se te pida que elijas un idioma.</li>
 
                 </ol><br>
-                <b>Apple Silicon</b>
+                <p><b>Apple Silicon</b></p>
                 <ol>
                     <li>Enciende la Mac y sigue manteniendo presionado el botón de encendido mientras se inicia la Mac.</li>
                     <li>Suelta el botón cuando veas la ventana de opciones de arranque, en la que se muestra un ícono de engranaje con la etiqueta Opciones.</li>
                     <li>Presiona Comando (⌘) + D en el teclado.</li>
                 </ol><br>
                 <a class="hp-link" href="https://support.apple.com/es-cl/HT202731">Más información</a>
-                </p>
                 </div>
             </div>
         </section>
@@ -168,7 +168,7 @@
             <div class="hp-col">
                 <img src="img/soporteapplemac-fallas-comunes-02.jpg" class="hp-img-fluid" alt="">
             </div>
-            <div class="hp-col hp-plCol">
+            <div class="hp-col hp-plCol" data-aos="fade-up">
                 <h2>¿Necesitas instalar programas? ¿Actualizar tu Mac a la ultima versión OS?</h2>
                 <p>Si necesitas aplicaciones en el área de diseño, ofimática, procesamiento de datos, desarrollo, analítica de datos, etc. Tenemos a tu disposición todos los programas que necesites, como Word, Excel, Power Point, Adobe Illustrator, Adobe Photoshop, entre otros. Lo único que debes tener en consideración es que debes traernos las licencias correspondientes, a menos porsupuesto, que el programa que busques sea gratis, en ese caso no necesitarás nada. <strong>Tambien podemos ayudarte guiarte para actualizar tu equipo a la ultima versión de OS.</strong> </p>
                 <a class="hp-btn hp-btn-primary" href="contacto.html">Soporte</a>
@@ -182,7 +182,7 @@
         <div class="hp-col">
             <a><img src="img/brand/logo-soporte-apple-mac-b.svg" alt="Logo Soporte Apple Mac"></a>
             <!-- <p>© 2021, Soporte Apple Mac</p> -->
-            <p><script type="text/javascript">
+            <p><script>
                 copyright=new Date();
                 update=copyright.getFullYear();
                 document.write("&copy; Copyright " + update);

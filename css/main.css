@@ -311,8 +311,8 @@ a {
 /* Form */
 .hp-alert {
   position: relative;
-  padding: 20px;
-  margin: 20px 0px;
+  padding: 2rem;
+  margin: 2rem 0rem;
 }
 
 .hp-alert--danger {
@@ -675,6 +675,12 @@ a {
   text-decoration: underline;
 }
 
+.contacto-map {
+  min-width: 100%;
+  height: 30rem;
+  border: 0;
+}
+
 .contacto-form {
   width: 100%;
   margin: auto;
@@ -722,7 +728,7 @@ a {
 /* Small devices (Desktop, less than 1024px) */
 @media (max-width: 1024px) {
   .hp-header {
-    padding: 0px;
+    padding: 0rem;
   }
   .hp-header img {
     margin-left: 5rem;
@@ -731,7 +737,7 @@ a {
   .navBar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px 0px;
+    padding: 2.5rem 0rem;
   }
 
   .navBar__link {
@@ -818,7 +824,7 @@ a {
   }
 
   .hp-header {
-    padding: 0px;
+    padding: 0rem;
   }
   .hp-header img {
     margin-left: 2rem;
